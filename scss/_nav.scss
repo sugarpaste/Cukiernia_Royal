@@ -1,0 +1,28 @@
+/* --NAVIGATION--*/
+
+.nav {
+
+    border: 1px solid red;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        align-self: center;    
+    }
+
+    &__item-link {
+        
+    }
+
+    &__logo {
+        display: block;
+        
+        img {
+            width: 90px;
+            height: 100px;
+        }
+    }
+}
