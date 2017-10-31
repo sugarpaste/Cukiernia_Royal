@@ -1,8 +1,9 @@
 /* --NAVIGATION--*/
 
 .nav {
-
-    border: 1px solid red;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 10px 0;
 
     &__list {
         display: flex;
@@ -10,19 +11,46 @@
     }
 
     &__item {
-        align-self: center;    
+        align-self: center;
     }
 
     &__item-link {
-        
+        color: $brand-color;
+        font-family: $font-primary;
+        font-size: 30px;
+        position: relative;
+
+        &:hover {
+            color: $link-hover;
+
+            &::after {
+                visibility: visible;
+                transform: scaleX(1);
+            }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: $link-hover;
+            visibility: hidden;
+            height: 5px;
+            width: 100%;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out 0s;
+        }
     }
 
     &__logo {
         display: block;
-        
+
         img {
             width: 90px;
             height: 100px;
+            vertical-align: middle;
         }
     }
+
 }
