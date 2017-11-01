@@ -1,7 +1,10 @@
 /* --HEADER--*/
 
 .header {
-    border-bottom: 5px solid $brand-color;
+    border-bottom: 3px solid $brand-color;
+    position: fixed;
+    background-color: #f9f9f9;
+    width: 100%;
     
     &__container {
       
