@@ -2,20 +2,30 @@
     console.log("dom ok"); 
 });*/
 
-$(function() {
+$(function () {
     //console.log("dom10");
-    
-   var $nav = $('.nav');
-    
-    $(window).scroll(function(){
 
-        var $scroll =  $(window).scrollTop();
+    var $nav = $('.nav');
 
-        if ( ($scroll) >= 20) {
+    $(window).scroll(function () {
+
+        var $scroll = $(window).scrollTop();
+
+        if (($scroll) >= 20) {
             $nav.addClass('nav--transition');
 
         } else {
             $nav.removeClass('nav--transition');
         }
+    });
+
+    $('.slider__content').slick({
+        ltr: true,
+        autoplay: true,
+        arrows: false,
+        autoplaySpeed: 2500,
+        slidesToShow: 2,
+        infinite: true
+    
     });
 });

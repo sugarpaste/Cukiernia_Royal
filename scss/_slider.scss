@@ -1,0 +1,27 @@
+/* --SLIDER-- */
+
+.slider {
+    max-width: 1366px;
+    margin: 0 auto;
+    border: 1px solid red;
+    
+    &__container {
+        margin: 0 auto;
+    }
+    
+    &__box {
+      height: 700px; 
+        margin: 0 auto;
+        display: inline-block;
+    }
+    
+    &__content {
+        margin-top: 120px; 
+        display: block;
+    }
+    
+    &__box-img {
+        width: 1000px;
+        height: 400px;
+    }
+}
