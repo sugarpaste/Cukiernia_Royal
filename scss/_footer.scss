@@ -1,17 +1,18 @@
 /* --FOOTER--*/
 
 .footer {
-    background-color: $color-primary;
-    height: 200px;
-    width: 100%;
-    
+
+    &__container {}
+
+    // height: 300px;
+    //  width: 100%;
     &__smooth {
         background-color: $smooth;
         width: 100%;
         height: 30px;
         position: relative;
         cursor: pointer;
-        
+
         &::before {
             position: absolute;
             content: '';
@@ -27,11 +28,37 @@
             background-repeat: no-repeat;
             background-position: 70px 0px;
         }
-        
+
         &:hover::before {
             background-position: 70px -5px;
         }
     }
 
-}
+    &__up {
+        background-color: $color-primary;
+        height: 100px;
+        line-height: 100px;
+        font-family: $font-primary;
+    }
+    
+    &__down {
+        background-color: $darkbrown;
+        width: 100%;
+        height: 150px;
+    }
 
+    &__menu {
+        
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 25px;
+        padding: 0 200px;
+    }
+    
+    &__item-link {
+        text-decoration: none;
+        color: #fbe9ad;  
+    }
+
+}
