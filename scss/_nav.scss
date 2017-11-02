@@ -26,7 +26,7 @@
         position: relative;
 
         &:hover {
-            color: $color-secondary;
+            color: $smooth;
 
             &::after {
                 visibility: visible;
@@ -39,7 +39,7 @@
             position: absolute;
             left: 0;
             bottom: -10px;
-            background-color: $color-secondary;
+            background-color: $smooth;
             visibility: hidden;
             height: 2px;
             width: 100%;

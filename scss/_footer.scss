@@ -1,6 +1,37 @@
 /* --FOOTER--*/
 
 .footer {
+    background-color: $color-primary;
+    height: 200px;
+    width: 100%;
+    
+    &__smooth {
+        background-color: $smooth;
+        width: 100%;
+        height: 30px;
+        position: relative;
+        cursor: pointer;
+        
+        &::before {
+            position: absolute;
+            content: '';
+            display: block;
+            left: calc(50% - 100px);
+            right: calc(50% - 100px);
+            width: 200px;
+            height: 60px;
+            border-radius: 50%;
+            top: -30px;
+            background-color: inherit;
+            background-image: url(/img/top.svg);
+            background-repeat: no-repeat;
+            background-position: 70px 0px;
+        }
+        
+        &:hover::before {
+            background-position: 70px -5px;
+        }
+    }
 
 }
 
