@@ -1,11 +1,12 @@
 /* --HEADER--*/
 
 .header {
-    border-bottom: 3px solid $brand-color;
+    border-bottom: 3px solid $color-primary;
     position: fixed;
-    background-color: #f9f9f9;
+    background-color: white;
     width: 100%;
     z-index: 1;
+    top: 0;
     
     &__container {
       

@@ -20,13 +20,13 @@
     }
 
     &__item-link {
-        color: $brand-color;
+        color: $color-primary;
         font-family: $font-primary;
         font-size: 30px;
         position: relative;
 
         &:hover {
-            color: $link-hover;
+            color: $color-secondary;
 
             &::after {
                 visibility: visible;
@@ -39,7 +39,7 @@
             position: absolute;
             left: 0;
             bottom: -10px;
-            background-color: $link-hover;
+            background-color: $color-secondary;
             visibility: hidden;
             height: 2px;
             width: 100%;

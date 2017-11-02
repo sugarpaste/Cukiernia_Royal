@@ -26,6 +26,5 @@ $(function () {
         autoplaySpeed: 2500,
         slidesToShow: 2,
         infinite: true
-    
     });
 });
