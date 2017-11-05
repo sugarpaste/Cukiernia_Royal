@@ -1,7 +1,8 @@
-/* --FONTS--*/
+/* --FONTS-- */
 
 $font-primary: 'kaushan_scriptregular', 'Trattatello', serif ;
 $font-secondary: 'josefin_sansregular', 'Arial', sans-serif;
+$font-light: 'josefin_sanslight', 'Arial', sans-serif;
 
 
 @font-face {
@@ -18,7 +19,6 @@ $font-secondary: 'josefin_sansregular', 'Arial', sans-serif;
          url('../fonts/andada-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
@@ -28,16 +28,14 @@ $font-secondary: 'josefin_sansregular', 'Arial', sans-serif;
          url('../fonts/josefinsans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'robotolight';
-    src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
-         url('../fonts/roboto-light-webfont.woff') format('woff');
+    font-family: 'josefin_sanslight';
+    src: url('../fonts/josefinsans-light-webfont.woff2') format('woff2'),
+         url('../fonts/josefinsans-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 

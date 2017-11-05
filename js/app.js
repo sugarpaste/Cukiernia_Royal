@@ -33,7 +33,7 @@ $(function () {
     
     
 //smooth scroll    
-    $('.footer__smooth').on('click', function(e){
+    $('.footer__smooth-up').on('click', function(e){
     e.preventDefault();
 		$('html, body').animate({scrollTop: 0}, 1000);
 	});
