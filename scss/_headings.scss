@@ -1,0 +1,10 @@
+/* --HEADINGS-- */
+
+.head {
+    font-family: $font-primary;
+    color: $text;
+    
+    &--big {
+        text-transform: uppercase;
+    }
+}

@@ -55,7 +55,6 @@
         display: flex;
         justify-content: space-between;
         font-size: 25px;
-        padding: 0 200px;
     }
 
     &__item-link {
@@ -74,27 +73,6 @@
     &__second-item {
         align-self: center;
         line-height: 24px;
-    }
-
-    &__address {
-        position: relative;
-
-        &::before {
-            display: block;
-            content: '';
-            position: absolute;
-            left: -30px;
-            top: 0px;
-            width: 25px;
-            height: 40px;
-            background-repeat: no-repeat;
-            background-image: url("/img/point.svg");
-        }
-    }
-    
-    &__address-tel {
-        display: block;
-        padding-top: 4px;
     }
 
     &__fb {
