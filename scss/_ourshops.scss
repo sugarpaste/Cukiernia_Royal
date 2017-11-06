@@ -5,11 +5,10 @@
 
     &__container {
         padding-top: 180px;
-        border: 1px solid blue;
     }
 
     &__wrapper {
-        padding: 80px 100px;
+        padding: 90px 100px;
         padding-top: 50px;
     }
 
@@ -37,13 +36,34 @@
     &__address {
         font-family: $font-secondary;
         font-size: 26px;
-        font-weight: 800; 
+        font-weight: 800;
         align-self: center;
         width: 40%;
+
+        &--brand {
+            width: 60%;
+        }
     }
 
     &__map {
         width: 60%;
-        height: 300px
+        height: 300px;
+    }
+
+    &__logo {
+        width: 50%;
+
+        img {
+            display: block;
+            width: 80%;
+            height: auto;
+            float: right;
+            text-align: right;
+        }
+    }
+
+    &__data-brand {
+        padding-top: 20px;
+        font-size: 22px;
     }
 }
