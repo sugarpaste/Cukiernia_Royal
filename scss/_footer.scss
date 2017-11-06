@@ -6,7 +6,7 @@
         border: 1px solid green;
     }
     &__smooth {
-        background-color: $smooth;
+        background-color: #fbe086;
         width: 100%;
         height: 30px;
     }
@@ -27,7 +27,7 @@
             background-image: url(/img/top.svg);
             background-repeat: no-repeat;
             background-position: 50px 0px;
-            background-color: $smooth;
+            background-color: #fbe086;
             cursor: pointer;
         }
 
@@ -35,7 +35,6 @@
             background-position: 50px -5px;
         }
     }
-
 
     &__first {
         background-color: $color-primary;
@@ -58,8 +57,11 @@
     }
 
     &__item-link {
-        text-decoration: none;
-        color: #fbe9ad;
+        color: $link-light-color;
+        
+        &:hover {
+            color: $smooth;
+        }
     }
 
     &__second-menu {
@@ -76,24 +78,34 @@
     }
 
     &__fb {
+        position: relative;
 
         &::before {
+            display: block;
+            content: '';
+            background-repeat: no-repeat;
             background-image: url("/img/fb1.svg");
             width: 25px;
             height: 50px;
             top: -6px;
             left: 210px;
+            position: absolute;
         }
     }
 
     &__mail {
+        position: relative;
 
         &::before {
+            display: block;
+            content: '';
+            background-repeat: no-repeat;
             background-image: url("/img/mail.svg");
             width: 15px;
             height: 30px;
             top: 7px;
             left: -25px;
+            position: absolute;
         }
     }
 }
