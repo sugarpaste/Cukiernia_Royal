@@ -4,12 +4,11 @@
     background-color: $bg-color;
 
     &__container {
-        padding-top: 180px;
+        padding-top: 60px;
     }
 
     &__wrapper {
-        padding: 90px 100px;
-        padding-top: 50px;
+        padding: 50px 100px 90px;
     }
 
     &__data {
@@ -65,5 +64,9 @@
     &__data-brand {
         padding-top: 20px;
         font-size: 22px;
+    }
+    
+    &__bank {
+        padding-top: 20px;
     }
 }
