@@ -2,6 +2,7 @@
 
 .ourshops {
     background-color: $bg-color;
+        min-height: calc(100vh - 400px);
 
     &__container {
         padding-top: 60px;
