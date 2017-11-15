@@ -3,7 +3,7 @@
 });*/
 
 $(function () {
-    //console.log("dom10");
+    //console.log("domOK");
     
 //header
     var $nav = $('.nav');
@@ -19,8 +19,7 @@ $(function () {
             $nav.removeClass('nav--transition');
         }
     });
-    
-    
+      
 //slider
     $('.slider__content').slick({
         ltr: true,
@@ -30,13 +29,19 @@ $(function () {
         slidesToShow: 3,
         infinite: true
     });
-    
-    
+      
 //smooth scroll    
     $('.footer__smooth-up').on('click', function(e){
     e.preventDefault();
 		$('html, body').animate({scrollTop: 0}, 1000);
 	});
-
+    
+//cake background
+   /* var $box = ('.gallery__wrapper-item');
+    var $text = ('.gallery__item-text');
+    $box.mouseenter( function(){
+        console.log("tak");
+        $text.addClass('gallery__item-text--activ');    
+    })*/
     
 });
