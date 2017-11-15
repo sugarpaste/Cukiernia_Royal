@@ -1,9 +1,8 @@
 /* --ABOUT-- */
 
 .about {
-    background-color: $bg-color;
     min-height: calc(100vh - 300px);
-
+    
     &__wrapper {
         display: flex;
         padding: 150px 0;

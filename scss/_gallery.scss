@@ -1,0 +1,60 @@
+/* --GALLERY-- */
+
+.gallery {
+    &__wrapper {
+        border: 2px solid red;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__wrapper-item {
+        border: 3px solid $color-primary;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 50px;
+        background-repeat: no-repeat;
+        background-size: 300px 250px;
+        background-position: -60px -10px;
+
+        &--classic {
+            background-image: url(/img/gallery/torty-klasyczne/dekoracja-owocowa06.jpg);
+        }
+
+        &--artistic {
+            background-image: url(/img/gallery/torty-artystyczne/tort-wesoly-minionek.jpg);
+            background-position: -50px -25px;
+        }
+        &--kids {
+            background-image: url(/img/gallery/torty-dzieciece/tort-wioska-smerfow.jpg);
+            background-size: 230px 250px;
+            background-position: -20px 0;
+        }
+        &--baptism {
+            background-image: url(/img/gallery/torty-na-chrzest/tort-buciki-dziewczynka02.jpg);
+            background-size: 280px 230px;
+            background-position: -40px -1px;
+        }
+        &--wedding {
+            background-image: url(/img/gallery/torty-weselne/tort-weselny-gozdziki-masa-cukrowa.jpg);
+        }
+        &--mix {
+            background-image: url(/img/gallery/torty-z-dekoracja-mieszana/tort-oplatek-barcelona.jpg);
+            background-position: -50px -2px;
+        }
+        &--cookies {
+            background-image: url(/img/gallery/ciasteczka-dekoracyjne/serca-wesele.jpg);
+            background-size: 260px 300px;
+        }
+
+        &--other {
+            background-image: url(/img/gallery/inne/tort-wiczor-panienski.jpg);
+        }
+
+
+
+    }
+
+    &__wrapper-foto {}
+}
