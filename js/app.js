@@ -3,7 +3,7 @@
 });*/
 
 $(function () {
-    //console.log("domOK");
+    console.log("domOK");
     
 //header
     var $nav = $('.nav');
@@ -21,7 +21,8 @@ $(function () {
     });
       
 //slider
-    $('.slider__content').slick({
+    var $slider = $('.slider__content'); 
+    $slider.slick({
         ltr: true,
         autoplay: true,
         arrows: false,
@@ -30,8 +31,9 @@ $(function () {
         infinite: true
     });
       
-//smooth scroll    
-    $('.footer__smooth-up').on('click', function(e){
+//smooth scroll  
+    var $smooth = $('.footer__smooth-up');
+    $smooth.on('click', function(e){
     e.preventDefault();
 		$('html, body').animate({scrollTop: 0}, 1000);
 	});
