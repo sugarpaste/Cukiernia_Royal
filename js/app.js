@@ -17,7 +17,6 @@ $(function () {
     });
 
     //smooth scroll  
-
     var $smooth = $('.footer__smooth-up');
     $smooth.on('click', function (e) {
         e.preventDefault();
