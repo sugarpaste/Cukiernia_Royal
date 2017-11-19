@@ -16,11 +16,8 @@ $(function () {
         }
     });
 
-    //cake background
-    //var $box = ('.gallery__wrapper-item');
-    //var $text = ('.gallery__item-text');
-
-    $('.gallery__wrapper-item').mouseenter(function () {
+    //cake background in main gallery
+   /* $('.gallery__wrapper-item').mouseenter(function () {
         //console.log("tak");
         $(this).find('.gallery__item-text').css({
             "visibility": "visible"
@@ -31,7 +28,19 @@ $(function () {
         $(this).find('.gallery__item-text').css({
             "visibility": "hidden"
         });
+    });*/
+    
+    var $galleryItem = $('.gallery__wrapper-item');
+    
+    $galleryItem.mouseenter(function () {
+        //console.log("tak");
+        $(this).addClass('gallery__wrapper-item--activ')
+        });
+    $galleryItem.mouseleave(function () {
+        //console.log("tak");
+        $(this).removeClass('gallery__wrapper-item--activ')
     });
+    
 
     //smooth scroll  
     var $smooth = $('.footer__smooth-up');

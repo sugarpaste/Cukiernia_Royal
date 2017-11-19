@@ -2,11 +2,14 @@
 
 .gallery {
     &__wrapper {
-        border: 2px solid red;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 200px 0;
+        padding: 100px 20px;
+    }
+
+    &__container {
+        padding-top: 50px;
     }
 
     &__wrapper-item {
@@ -14,17 +17,28 @@
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        margin-bottom: 50px;
+        margin-bottom: 80px;
         background-repeat: no-repeat;
         background-size: 300px 250px;
         background-position: -60px -10px;
         position: relative;
+
         &:hover {
             background-color: lightyellow;
             z-index: 10;
             background-image: none;
+
         }
-        
+
+        &--activ {
+            .gallery__wrapper-description {
+                opacity: 0.7;
+            }
+            .gallery__item-text {
+                visibility: visible;
+            }
+        }
+
         &--classic {
             background-image: url(/img/gallery/torty-klasyczne/dekoracja-owocowa06.jpg);
         }
@@ -78,11 +92,22 @@
     }
 
     &__item-text {
-        //visibility: visible;
+        visibility: hidden;
         width: 190px;
         height: 200px;
         text-align: center;
-        padding-top: 73px;
+        padding-top: calc(50% - 25px);
+        font-size: 20px;
+    }
+
+    &__description {
+        text-align: center;
+        padding: 20px 0 50px;
+        font-size: 16px;
+    }
+
+    &__text {
+        text-align: right;
         font-size: 20px;
     }
 }
