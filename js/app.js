@@ -30,14 +30,14 @@ $(function () {
         });
     });*/
     
+    //cake background in main gallery
+    
     var $galleryItem = $('.gallery__wrapper-item');
     
     $galleryItem.mouseenter(function () {
-        //console.log("tak");
         $(this).addClass('gallery__wrapper-item--activ')
         });
     $galleryItem.mouseleave(function () {
-        //console.log("tak");
         $(this).removeClass('gallery__wrapper-item--activ')
     });
     
