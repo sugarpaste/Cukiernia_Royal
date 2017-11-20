@@ -320,10 +320,10 @@
 
  			// create title helper.
 
- 			var titleOpts = $.extend({'text': current.text,
+ 			/*var titleOpts = $.extend({'text': current.text,
  									'idxInfo': 'image ' + current.index + ' of ' + this.group.length},
  									current.helpers.title);
- 			this.helpers.title.show(titleOpts);
+ 			this.helpers.title.show(titleOpts);*/
 
  			current.closeBtn = $(current.tpl.closeBtn).appendTo(current.skin);
  			
