@@ -1,0 +1,47 @@
+/* --OFFER-- */
+
+.offer {
+    &__container {}
+    &__main-table {
+        border-collapse: separate;
+        border-spacing: 12px;
+        padding-bottom: 60px;
+
+        thead {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        th {
+            border-bottom: 2px dashed #401d1b;
+        }
+        thead tr th:first-child {
+            text-align: right;
+        }
+        thead tr th:nth-child(3) {
+            text-align: left;
+        }
+        tbody {
+            font-size: 18px;
+        }
+        tbody tr td {
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #401d1b;
+            vertical-align: middle;
+        }
+        tbody tr td:first-child {
+            text-align: right;
+        }
+        tbody tr td:nth-child(2) {
+            width: 80px;
+        }
+    }
+    &__width {
+        width: 300px;
+    }
+    &__center {
+        margin: 0 auto;
+    }
+    &__left {
+        text-align: left;
+    }
+}
