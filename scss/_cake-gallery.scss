@@ -8,16 +8,18 @@
         flex-wrap: wrap;
         justify-content: center;
         padding-bottom: 80px;
-        
     }
     &__wrapper-foto {
         width: 200px;
         height: 200px;
         text-align: center;
-        border: 1px solid red;
-        img {
-            width: 100%;
-            height: auto;
+        //border: 1px solid $color-secondary;
+        border-radius: 5px;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.7s ease-in-out;
         }
+
     }
 }

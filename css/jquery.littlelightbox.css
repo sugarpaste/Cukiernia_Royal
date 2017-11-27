@@ -126,7 +126,7 @@
 .lightbox-wrap .lightbox-outer,
 .lightbox-wrap .lightbox-image {
     background-color: white;
-    /*border-radius: 10px;*/
+    border-radius: 5px;
 }
 
 /* Title helper */
