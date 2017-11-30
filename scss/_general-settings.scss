@@ -1,6 +1,5 @@
 /* --GENERAL SETTINGS-- */
 
-
 body {
     font-family: $font-secondary;
     color: $text;
@@ -11,6 +10,10 @@ body {
 .container {
     margin: 0 auto;
     width: 1000px;
+    @media (max-width: 767px) {
+        width: 100%;
+
+    }
 }
 
 a {
