@@ -18,7 +18,6 @@
         @media (max-width: 767px) {
             padding: 15px 0;
             transition: none;
-            
         }
     }
 
@@ -77,27 +76,34 @@
     }
 
     &--open &__mobile-hamburger {
-        background-color: transparent;
+        background-color: inherit;
         &::before {
             transform: translateY(10px) rotateZ(45deg);
+            background-color: $color-primary;
         }
         &::after {
             transform: translateY(-10px) rotateZ(-45deg);
+            background-color: $color-primary;
         }
     }
 
     &__list {
+
         display: flex;
         justify-content: space-between;
         position: relative;
 
         @media (max-width: 767px) {
-            flex-direction: column;
+            display: none;
             width: 100%;
+            border: 2px solid red;
         }
     }
 
 
+    &--open &__list {
+        display: block;
+    }
 
     &__item {
         align-self: center;
@@ -119,7 +125,6 @@
         position: relative;
 
         @media (max-width: 767px) {
-            width: 100%;
             display: block;
         }
 
@@ -168,5 +173,4 @@
 
         }
     }
-
 }

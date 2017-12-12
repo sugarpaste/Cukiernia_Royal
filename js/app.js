@@ -51,7 +51,14 @@ $(function () {
         }, 1000);
     });
 
-
+//hamburger menu
+    var $hamburger = $('.nav__mobile-link');
+    var $nav = $('.nav');
+    var $header = $('.header');
+    $hamburger.on('click', function (){
+      $nav.toggleClass('nav--open');  
+      $header.toggleClass('header--open');  
+    })
 
 
 });

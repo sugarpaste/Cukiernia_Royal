@@ -10,8 +10,9 @@
 
     &__container {}
     @media (max-width: 767px) {
-        width: 100%;
-        height: 100%;
         border-bottom: none;
+        background-color: transparent;
     }
+    &--open  {height: 100%;
+    background-color: white;}
 }
