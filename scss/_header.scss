@@ -8,12 +8,20 @@
     z-index: 20;
     top: 0;
 
-    &__container {}
-    @media (max-width: 767px) {
-        border-bottom: none;
-        background-color: transparent;
+    &__container {
+    @media (max-width: 1000px) {
+        padding: 0 20px;
     }
-    &--open {
-        background-color: white;
-    }
+
+}
+
+@media (max-width: 767px) {
+    border-bottom: none;
+    background-color: transparent;
+}
+
+&--open {
+    background-color: white;
+}
+
 }

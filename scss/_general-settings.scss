@@ -10,9 +10,8 @@ body {
 .container {
     margin: 0 auto;
     width: 1000px;
-    @media (max-width: 767px) {
+    @media (max-width: 1000px) {
         width: 100%;
-
     }
 }
 

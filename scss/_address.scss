@@ -1,6 +1,6 @@
 /* --ADDRESS-- */
 
-.address {
+/*.address {
     position: relative;
 
     &::before {
@@ -13,6 +13,11 @@
         height: 40px;
         background-repeat: no-repeat;
         background-image: url("/img/point.svg");
+
+        @media (max-width: 1000px) {
+
+            left: 160px;
+        }
     }
 
     &--right {
@@ -24,7 +29,7 @@
             display: none;
         }
     }
-}
+}*/
 
 .address-tel {
     display: block;
