@@ -13,7 +13,8 @@
     &__wrapper {
         display: flex; //padding: 150px 0;
         @media (max-width: 768px) {
-            display: block;
+            //display: block;
+            flex-direction: column;
         }
     }
 
@@ -25,7 +26,12 @@
 
         @media (max-width: 768px) {
             width: 100%;
-            &:(:nth-child(2)) {order:1;}
+        }
+    }
+    &--order {
+        @media (max-width: 768px) {
+            order: -1;
+            padding-bottom: 20px;
         }
     }
 
@@ -36,6 +42,11 @@
 
         @media (max-width: 1000px) {
             height: 480px;
+        }
+
+        @media (max-width: 768px) {
+            height: 300px;
+            margin-bottom: 20px;
         }
     }
 
@@ -50,8 +61,11 @@
             padding-bottom: 10px;
             width: 80%;
             @media (max-width: 1000px) {
-                font-size: 24px;
+                font-size: 28px;
                 width: 100%;
+            }
+            @media (max-width: 480px) {
+                font-size: 24px;
             }
         }
 
