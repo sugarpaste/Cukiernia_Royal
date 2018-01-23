@@ -4,12 +4,17 @@
     &__wrapper {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 80px 20px;
+
+        @media (max-width: 480px) {
+            justify-content: center;
+            padding: 20px;
+        }
     }
 
     &__container {
-        padding-top: 20px;
+        padding: 20px 15px 15px;
     }
 
     &__wrapper-item {
@@ -110,5 +115,8 @@
     &__text {
         text-align: right;
         font-size: 20px;
+        @media (max-width: 480px) {
+            text-align: center;
+        }
     }
 }

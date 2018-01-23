@@ -6,13 +6,15 @@
     &__container {
         padding: 150px 0;
         @media (max-width: 1000px) {
-           padding: 50px 15px;
+            padding: 50px 15px;
         }
     }
 
     &__wrapper {
-        display: flex;
-        //padding: 150px 0;
+        display: flex; //padding: 150px 0;
+        @media (max-width: 768px) {
+            display: block;
+        }
     }
 
     &__item {
@@ -20,6 +22,11 @@
         padding-right: 15px;
         display: flex;
         align-self: center;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            &:(:nth-child(2)) {order:1;}
+        }
     }
 
     &__foto {
