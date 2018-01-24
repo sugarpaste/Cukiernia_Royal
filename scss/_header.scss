@@ -9,19 +9,19 @@
     top: 0;
 
     &__container {
-    @media (max-width: 1000px) {
-        padding: 0 20px;
+        @media (max-width: 1000px) {
+            padding: 0 20px;
+        }
+
     }
 
-}
+    @media (max-width: 767px) {
+        border-bottom: none;
+        background-color: transparent;
+        position: relative;
+    }
 
-@media (max-width: 767px) {
-    border-bottom: none;
-    background-color: transparent;
-}
-
-&--open {
-    background-color: white;
-}
-
+    &--open {
+        background-color: white;
+    }
 }
