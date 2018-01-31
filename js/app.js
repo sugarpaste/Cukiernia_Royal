@@ -9,7 +9,9 @@ $(function () {
     var $nav = $('.nav');
     $(window).scroll(function () {
         var $scroll = $(window).scrollTop();
-        if (($scroll) >= 20) {
+        var $width = $(window).width();
+ 
+        if (($scroll) >= 20 && ($width) > 767) {
             $nav.addClass('nav--transition');
         } else {
             $nav.removeClass('nav--transition');
@@ -51,7 +53,7 @@ $(function () {
         }, 1000);
     });
 
-//hamburger menu
+    //hamburger menu
     var $hamburger = $('.nav__mobile-link');
     var $nav = $('.nav');
     var $header = $('.header');

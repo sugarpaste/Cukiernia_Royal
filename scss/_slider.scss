@@ -5,6 +5,10 @@
     margin: 0 auto;
     border-bottom: 3px solid $color-primary;
     border-top: 3px solid $color-primary;
+    padding-top: 130px;
+    @media(max-width: 767px) {
+        padding-top: 0;
+    }
 
     &__container {
         margin: 0 auto;
@@ -27,6 +31,6 @@
         }
         @media(max-width: 767px) {
             height: 200px;
-        } //border:1px solid red;
+        }
     }
 }

@@ -86,18 +86,28 @@
             background-color: $color-primary;
         }
     }
+    &__mobile-logo {
+        width: 90px;
+        height: 100px;
+        display: none;
+        margin: 10px 0;
+        @media (max-width: 767px) {
+            display: block;
+        }
+    }
+    &--open &__mobile-logo {
+        margin-left: calc(50% - 45px);
+        margin-right: calc(50% - 45px);
+        padding-top: 30px;
+    }
 
     &__list {
-
         display: flex;
-        justify-content: space-between;
-       // position: relative;
-
+        justify-content: space-between; // position: relative;
         @media (max-width: 767px) {
             display: none;
-            height: 100%;
-            ///margin-top: 100px;
-            padding-top: 100px;
+            height: 100%; ///margin-top: 100px;
+            padding-top: 60px;
         }
     }
 

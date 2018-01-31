@@ -1,7 +1,12 @@
 /* --OFFER-- */
 
 .offer {
-    &__container {padding-top: 60px;}
+    &__container {
+        padding-top: 60px;
+        @media(max-width: 768px) {
+            padding: 0;
+        }
+    }
     &__main-table {
         border-collapse: separate;
         border-spacing: 12px;

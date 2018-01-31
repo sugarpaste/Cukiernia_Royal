@@ -1,7 +1,9 @@
 /* --MAIN-- */
 
 .main-content {
-    padding-top: 130px;
-    //min-height: calc(100vh - 290px);
+    padding-top: 130px; //min-height: calc(100vh - 290px);
     background-color: $bg-color;
+    @media(max-width: 768px) {
+        padding-top: 50px;
+    }
 }

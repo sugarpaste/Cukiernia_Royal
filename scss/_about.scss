@@ -2,6 +2,7 @@
 
 .about {
     min-height: calc(100vh - 300px);
+    background-color: $bg-color;
 
     &__container {
         padding: 150px 0;
