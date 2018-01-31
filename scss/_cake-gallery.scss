@@ -1,6 +1,12 @@
 /* --CAKE-GALLERY-- */
 
 .cake-gallery {
+    &__container {
+        padding-top: 60px;
+        @media(max-width: 768px) {
+            padding-top: 20px;
+        }
+    }
 
     &__wrapper {
         display: flex;
