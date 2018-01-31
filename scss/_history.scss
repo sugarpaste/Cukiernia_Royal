@@ -3,20 +3,21 @@
 .history {
     &__container {
         text-align: center;
-        padding: 0 50px 50px;
+        padding: 60px 50px 50px;
         font-size: 19px;
+        @media(max-width: 767px) {
+            padding: 0 15px 40px;
+        }
         p {
             padding-top: 5px;
             line-height: 26px;
-
         }
     }
     &__description {
         line-height: 28px;
     }
     &__signature {
-        text-align: right;
-        padding-right: 100px;
+        text-align: right; 
         margin-top: 30px;
         font-size: 24px;
     }
