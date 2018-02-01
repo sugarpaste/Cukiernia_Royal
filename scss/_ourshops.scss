@@ -10,9 +10,9 @@
     }
 
     &__wrapper {
-        padding: 50px 100px 90px;
+        padding: 50px 30px 90px;
         @media(max-width: 1000px) {
-            padding: 50px;
+            padding: 20px;
         }
         @media(max-width: 768px) {
             padding: 40px 15px 50px;
@@ -22,9 +22,8 @@
     &__data {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
-        position: relative;
-
+        align-items: center;
+        position: relative; 
         &:not(:first-child) {
             margin-top: 50px;
 
@@ -45,21 +44,52 @@
             flex-wrap: wrap;
         }
     }
+    &__info {
+        text-align: center;
+        font-size: 20px;
+        &--link {
+            text-decoration: underline;
+            text-decoration-color: $color-primary;
+        }
+    }
 
     &__address {
         font-family: $font-secondary;
-        font-size: 26px;
-        font-weight: 800;
-        align-self: center;
-        text-align: right;
-
+        font-size: 24px;
+        font-weight: 800; 
+        text-align: right; 
+        @media (max-width: 768px) {
+            font-size: 18px; 
+        }
         &--shops {
-            width: 40%;
+            width: 100%;
             @media (max-width: 768px) {
-                text-align: right;
-                width: 100%;
+                text-align: left;
+                width: 40%;
                 padding-top: 20px;
+                display: inline-block;
+            }
+            @media (max-width: 480px) {
                 display: block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        &--padding {
+            padding-top: 10px;
+        }
+        &--hours {
+            text-align: right;
+            width: 100%;
+            display: inline-block;
+            align-self: center;
+            @media (max-width: 768px) {
+                width: 50%;
+            }
+            @media (max-width: 480px) {
+                display: block;
+                width: 100%;
+                text-align: center;
             }
         }
         &--brand {
@@ -71,9 +101,20 @@
             }
         }
     }
+    &__address-wrapper {
+        @media (max-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        @media (max-width: 480px) {
+            display: block;
+        }
+    }
+
     &__map {
-        width: 70%;
-        height: 300px;
+        width: 65%;
+        height: 350px;
         @media (max-width: 1000px) {
             width: 60%;
         }
@@ -84,17 +125,16 @@
     }
 
     &__logo {
-        width: 50%;
+        width: 45%;
         @media (max-width: 768px) {
             width: 100%;
             margin: 0 auto;
             display: block;
         }
 
-
         img {
             display: block;
-            width: 80%;
+            width: 60%;
             height: auto;
             float: right;
             text-align: right;
