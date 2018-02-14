@@ -5,16 +5,15 @@
     background-color: $bg-color;
 
     &__container {
-        padding: 150px 0;
+        padding: 70px 0;
         @media (max-width: 1000px) {
             padding: 50px 15px;
         }
     }
 
     &__wrapper {
-        display: flex; //padding: 150px 0;
+        display: flex; 
         @media (max-width: 768px) {
-            //display: block;
             flex-direction: column;
         }
     }
