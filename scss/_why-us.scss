@@ -3,10 +3,19 @@
 .why-us {
     padding: 30px 0 80px;
     text-align: center;
+    @media (max-width: 768px) {
+        border: 1px solid red;
+    }
     &__container {
         display: flex;
         justify-content: space-between;
         padding: 50px 0 80px;
+        @media (max-width: 768px) {
+            display: block;
+            padding: 50px 0;
+            border: 1px solid blue;
+            //margin: 0 auto;
+        }
     }
     &__title {
         padding: 10px 0 20px;
@@ -19,6 +28,14 @@
         width: 300px;
         text-align: center;
         padding: 20px 30px 60px;
+        @media (max-width: 768px) {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 15px;
+            width: 280px;
+            height: 300px;
+            padding: 20px 5px;
+        }
     }
     &__description {
         font-size: 20px;
@@ -36,7 +53,4 @@
         border: 0;
         font-size: 22px;
     }
-    &__button {}
 }
-
-
