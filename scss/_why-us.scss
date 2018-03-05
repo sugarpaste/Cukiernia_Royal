@@ -1,15 +1,13 @@
 /* --WHY-US-- */
 
 .why-us {
-    padding: 30px 0 80px;
+    padding: 50px 0 80px;
     text-align: center;
     &__container {
         display: flex;
         justify-content: space-between;
-        padding: 50px 30px 80px;
-        @media (max-width: 1000px) {
-            padding: 50px 15px 80px;
-        }
+        padding: 50px 15px 80px;
+  
         @media (max-width: 768px) {
             display: block;
             padding: 50px 0;
