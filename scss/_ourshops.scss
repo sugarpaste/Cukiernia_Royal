@@ -23,7 +23,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: relative; 
+        position: relative;
         &:not(:first-child) {
             margin-top: 50px;
 
@@ -49,6 +49,21 @@
             text-decoration: underline;
             text-decoration-color: $color-primary;
         }
+        &--padding {
+            padding-bottom: 20px;
+        }
+        &--background {
+            background-color: rgb(255, 249, 232);
+            border-left: 1px solid #f26e10;
+            border-right: 1px solid #f26e10;
+        }
+        &--top {
+            border-top: 1px solid #f26e10;
+        }
+        &--bottom {
+            border-bottom: 1px solid #f26e10;
+        }
+
         @media(max-width: 480px) {
             display: block;
         }
@@ -57,10 +72,10 @@
     &__address {
         font-family: $font-secondary;
         font-size: 24px;
-        font-weight: 800; 
-        text-align: right; 
+        font-weight: 800;
+        text-align: right;
         @media (max-width: 768px) {
-            font-size: 18px; 
+            font-size: 18px;
         }
         &--shops {
             width: 100%;
