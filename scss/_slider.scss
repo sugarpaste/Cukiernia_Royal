@@ -36,7 +36,7 @@
     }*/
     &__box-img {
         // max-width: 100%;
-        height: 400px;
+        height: 300px;
         margin: 0 auto;
 
         /*@media(max-width: 1000px) {
@@ -48,52 +48,68 @@
     }
     &__gingerbreads {
         background-size: contain;
-        background: url(/img/slider_christmas/pierniczkii.jpg);
+        background: url(/img/slider_christmas/pierniczki.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: 100% 30%;
         width: 100%;
-        height: 403px;
+        height: 323px;
         display: block;
         @media(max-width: 1000px) {
             height: 253px;
-            
         }
         @media(max-width: 768px) {
             height: 153px;
         }
-
     }
-    &__cake {
+     &__cake {
         background-size: contain;
         background: url(/img/slider_christmas/cake.jpg);
         background-repeat: no-repeat;
         background-size: 70%;
         background-position: center;
         width: 100%;
-        height: 403px;
+        height: 323px;
         display: block;
         @media(max-width: 1000px) {
             height: 253px;
         }
         @media(max-width: 768px) {
             height: 153px;
+        }
     }
-    }
-        &__handmade {
+    &__handmade {
         background-size: contain;
         background: url(/img/slider_christmas/pierniki.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: 100% 70%;
         width: 100%;
-        height: 403px;
+        height: 323px;
         display: block;
         @media(max-width: 1000px) {
             height: 253px;
         }
         @media(max-width: 768px) {
             height: 153px;
+        }
     }
+        &__winner {
+        background-size: contain;
+        background: url(/img/slider_christmas/orly-strona.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 100% 50%;
+        width: 100%;
+        height: 323px;
+        display: block;
+        @media(max-width: 1000px) {
+            height: 253px;
+        }
+        @media(max-width: 768px) {
+            height: 153px;
+            background-size: cover;
+            background-position: 55% 100%;
+        }
     }
 }
