@@ -7,7 +7,7 @@
            ltr: true,
            autoplay: true,
            arrows: false,
-           autoplaySpeed: 4000,
+           autoplaySpeed: 3000,
            slidesToShow: 1,
            infinite: true,
 
