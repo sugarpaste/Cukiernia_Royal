@@ -13,39 +13,42 @@
     &__container {
         margin: 0 auto;
     }
-
-    &__box {
-
-        background-color: #f0eeef; //border:1px solid green;
-        // width: 33, 3%;
-        //width: 100%;
-        //height: 400px;
-        /*@media(max-width: 1000px) {
+    &__img{width: 100%;}
+    /*&__box {
+        background-color: #f0eeef; 
+        border:1px solid green;
+        width: 33, 3%;
+        width: 100%;
+        height: 400px;
+        @media(max-width: 1000px) {
             height: 250px;
         }
         @media(max-width: 768px) {
             height: 100px;
-        }*/
-    }
-    /*&__pierniczki {
+        }
+}
+
+&__pierniczki {
         width: 100%;
         height: 400px;
         background-size: contain;
         background: url(/img/slider_christmas/pierniczki.jpg);
         background-repeat: no-repeat;
     }*/
-    &__box-img {
-        // max-width: 100%;
-        height: 300px;
+    /*&__box-img {
+        width: 100%;
+        height: auto;
         margin: 0 auto;
+    }*/
 
-        /*@media(max-width: 1000px) {
+    /*@media(max-width: 1000px) {
             height: 250px;
         }
         @media(max-width: 768px) {
             height: 200px;
-        }*/
-    }
+        }
+   
+        
     &__gingerbreads {
         background-size: contain;
         background: url(/img/slider_christmas/pierniczki.jpg);
@@ -111,5 +114,5 @@
             background-size: cover;
             background-position: 55% 100%;
         }
-    }
+    }*/
 }
