@@ -58,14 +58,16 @@
     }
     &__link {
         margin: 0 auto;
+        display: block;
     }
     &__photos {
         padding-top: 30px;
         padding-bottom: 40px;
     }
     &__photo {
-        width: 49%;
-        height: auto;
+        height: 500px;
+        margin: 0 auto;
+        display: flex;
     }
     &__main-text {
         text-align: center;
@@ -76,7 +78,6 @@
 
         background-color: coral;
         &:hover {
-
             text-decoration: underline;
         }
     }
