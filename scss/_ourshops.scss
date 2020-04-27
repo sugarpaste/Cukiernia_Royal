@@ -1,9 +1,14 @@
 /* --OUR SHOPS-- */
 
 .ourshops {
-    //min-height: calc(100vh - 400px);
+    &--height {
+        min-height: 100vh;
+    }
+    
     &__container {
         padding-top: 60px;
+        position: relative;
+        min-height: 100%;
         @media(max-width: 768px) {
             padding: 0;
         }
@@ -115,6 +120,9 @@
                 margin: 0 auto;
                 display: block;
             }
+        }
+        &--title {
+            font-size: 40px;
         }
     }
     &__address-wrapper {

@@ -1,11 +1,12 @@
 /* --FOOTER-- */
 
 .footer {
+    &--contact {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
 
-
-    /* &__container {
-        border: 1px solid green;
-    }*/
     &__smooth {
         background-color: #fbe086;
         width: 100%;
