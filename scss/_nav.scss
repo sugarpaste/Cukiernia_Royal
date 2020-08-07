@@ -7,16 +7,14 @@
 
     @media (max-width: 768px) {
         width: 100%;
-        top: 100px;
-        padding: 0;
+        top: 100px; 
+        padding: 15px 20px;
     }
 
     &--transition {
         padding: 4px 0;
         transition: padding, .4s;
         @media (max-width: 768px) {
-            //padding: 15px 0;
-            //transition: none;
             display: none;
         }
     }
@@ -98,7 +96,6 @@
     &--open &__mobile-logo {
         margin-left: calc(50% - 45px);
         margin-right: calc(50% - 45px);
-        padding-top: 30px;
     }
 
     &__list {

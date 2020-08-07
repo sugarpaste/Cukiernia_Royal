@@ -1,13 +1,13 @@
 /* --PARTNERS-- */
 
 .partners {
-    min-height: calc(100vh - 370px);
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    @media(max-width: 768px) {
+    /*@media(max-width: 768px) {
         min-height: calc(100vh - 458px);
-    }
+    }*/
 
     &__wrapper {
         padding: 20px 50px;

@@ -12,7 +12,7 @@
     }
 
     &__smooth {
-        background-color: #fbe086;
+        background-color: $smooth;
         width: 100%;
         height: 30px;
     }
@@ -33,7 +33,7 @@
             background-image: url(/img/top.svg);
             background-repeat: no-repeat;
             background-position: 50px 0px;
-            background-color: #fbe086;
+            background-color: $smooth;
             cursor: pointer;
         }
 
