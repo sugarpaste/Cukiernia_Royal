@@ -1,1 +1,47 @@
 /* --CONTACT-- */
+.contact {
+        height: 100vh;
+
+    &__container {
+        border: 2px solid red;
+        padding-top: 60px;
+        position: relative;
+       // min-height: 100%;
+        @media(max-width: 768px) {
+            padding: 0;
+        }
+    }
+
+    &__wrapper {
+        padding: 50px 30px 200px; //margin-bottom: 100px;
+        @media(max-width: 1000px) {
+            padding: 20px;
+        }
+        @media(max-width: 768px) {
+            padding: 40px 15px 50px;
+        }
+    }
+
+    &__info {
+        text-align: center;
+        font-size: 20px;
+        &--link {
+            text-decoration: underline;
+            text-decoration-color: $color-primary;
+        }
+        &--padding {
+            padding-bottom: 20px;
+        }
+        &--background {
+            background-color: rgb(255, 249, 232);
+            border-left: 1px solid #f26e10;
+            border-right: 1px solid #f26e10;
+        }
+        &--top {
+            border-top: 1px solid #f26e10;
+        }
+        &--bottom {
+            border-bottom: 1px solid #f26e10;
+        }
+    }
+}
